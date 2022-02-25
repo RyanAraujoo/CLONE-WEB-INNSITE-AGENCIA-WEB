@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-content{
+    background: rgb(59,137,251);
+    background: radial-gradient(circle, rgba(59,137,251,1) 61%, rgb(47, 0, 255) 100%);
+    color: rgb(247,247,247); 
+}
