@@ -102,4 +102,45 @@
 .header-main-contact ul li span {
     color: rgb(247,247,247);
 }
+/* conteúdo principal // main */ 
+
+.primary-section-main {
+    margin: 100px auto;
+}
+.primary-section-main >  h1 {
+    color: rgb(59,137,251);
+    font-size: 50px;
+    text-align: center;
+}
+.primary-section-main > p {
+    max-width: 450px;
+    text-align: center;
+    margin: 50px auto;
+    display: block;
+}
+.primary-section-main article > div {
+    max-width: 400px;
+}
+.primary-section-main article > div figure img {
+    width: 400px;
+    height: 200px;
+}
+.primary-section-main article > div h2 {
+    margin: 25px auto;
+    width: 400px;
+}
+.primary-section-main article > div button {
+    background: none;
+    border: solid 1px black;
+    padding: 10px;
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+}
+.primary-section-main article {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    margin: 10px 25px;
+}
+
 
