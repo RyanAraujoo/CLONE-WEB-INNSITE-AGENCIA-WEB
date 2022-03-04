@@ -1,5 +1,5 @@
 function navbar () {
-    const nav = document.querySelector(".item3")
+    const nav = document.querySelector(".navigation-fixed-header-content")
     const displayMain = document.getElementById("main") 
     const displayFigureMain = document.getElementById("item1-img")
     
@@ -13,3 +13,4 @@ function navbar () {
         displayFigureMain.style.display = 'block'
     }
 }
+
