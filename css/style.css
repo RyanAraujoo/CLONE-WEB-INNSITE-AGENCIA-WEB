@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Smooch Sans', sans-serif;
 }
 
 .header-content {
@@ -15,7 +15,7 @@
     rgb(47, 0, 255) 100%
   );
   color: rgb(247, 247, 247);
-  height: 100vh;
+  padding-bottom: 25px;
 }
 .fixed-header-content {
   display: grid;
@@ -474,6 +474,63 @@ li a {
     color: rgb(59, 137, 251);
     font-weight: 800;
 }
+.septenary-section-main {
+  background: rgb(59, 137, 251);
+  background: radial-gradient(
+    circle,
+    rgba(59, 137, 251, 1) 61%,
+    rgb(47, 0, 255) 100%
+  );
+  color: rgb(247, 247, 247);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.septenary-section-main  a {
+  display: block;
+  color: rgb(247, 247, 247);
+  text-decoration: none;
+}
+.primary-article-septenary-section-main {
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.primary-article-septenary-section-main > div {
+  width: 300px;
+}
+.secondary-article-septenary-section-main {
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.secondary-article-septenary-section-main > div {
+  width: 200px;
+}
+.tertiary-article-septenary-section-main {
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+.tertiary-article-septenary-section-main > div {
+  width: 300px;
+  text-align: center;
+}
+.social-networks-Innsite ul {
+  display: flex;
+}
+.septenary-section-main > article > div {
+  margin: 50px auto;
+}
+.social-networks-Innsite > ul {
+  text-align: center;
+  justify-content: center;
+}
 /* responsive */
 @media (max-width: 894px) {
   .header-main-icone-mouse {
@@ -510,7 +567,7 @@ li a {
     background: rgb(32, 7, 255);
     padding-top: 100px;
     animation: NavbarSensibility 0.5s linear;
-   margin: 0;
+    margin: 0;
   }
   .navigation-navbar-content ul li {
     text-align: right;
@@ -518,6 +575,8 @@ li a {
     margin-top: 25px;
   }
 }
+
+
 
 @media (max-width: 750px) {
   .secondary-article-quaternary-section-main {
