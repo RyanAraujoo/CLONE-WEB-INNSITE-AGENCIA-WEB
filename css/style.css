@@ -148,17 +148,16 @@ li a {
   text-align: center;
 }
 .primary-section-main > p {
-  max-width: 450px;
   margin: 50px auto;
+  word-break: break-all;
   display: block;
   text-align: center;
 }
 .primary-section-main article > div {
   max-width: 400px;
-  margin-left: 15px;
 }
 .primary-section-main article > div figure img {
-  width: 400px;
+  width: 100%;
   height: 200px;
 }
 .primary-section-main article > div h2 {
@@ -241,65 +240,54 @@ li a {
   align-items: center;
 }
 .secondary-article-terciary-section-main {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  position: relative;
-  overflow-x:scroll;
   max-width: 50vw;
 }
-.secondary-article-terciary-section-main div {
-  max-width: 335px;
-  margin-left: 50px;
-  
+.secondary-article-terciary-section-main .item figure img {
+  width: 300px;
+  height: 300px;
 }
-.secondary-article-terciary-section-main > div figure img {
-  width: 200px;
-  height: 400px;
-}
-.secondary-article-terciary-section-main div h3 {
+.secondary-article-terciary-section-main .item h3 {
   font-size: 25px;
 }
-.secondary-article-terciary-section-main div p {
-  margin: 25px auto;
+.secondary-article-terciary-section-main .item p {
+  margin: 10px auto;
 }
-.secondary-article-terciary-section-main div button {
+.secondary-article-terciary-section-main .item button {
   border: none;
   background: none;
   display: flex;
   align-items: center;
+  margin-bottom: 50px;
+  cursor: pointer;
 }
 .secondary-article-terciary-section-main > span {
-  position: absolute;
-  right: 0;
-  top: 1;
   background-color: rgb(59, 137, 251);
   font-weight: bolder;
-  padding: 15px;
   border-radius: 25px;
   color: #ffffff;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
     0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
-    margin-bottom: 150px;
 }
 .quaternary-section-main {
   background-color: rgb(211, 207, 207);
-  padding: 100px;
 }
 .primary-article-quaternary-section-main h1 {
   font-size: 50px;
   color: rgb(59, 137, 251);
+  text-align: center;
 }
 .primary-article-quaternary-section-main p {
   max-width: 450px;
   margin-top: 15px;
   margin-bottom: 15px;
+  text-align: center;
 }
 .secondary-article-quaternary-section-main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-bottom: 15px;
   grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 .secondary-article-quaternary-section-main span {
   width: 150px;
@@ -315,26 +303,20 @@ li a {
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
     0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
 }
+
 .terciary-article-quaternary-section-main {
+  max-width: 400px;
+  background-color: rgb(211, 207, 207);
+}
+.terciary-article-quaternary-section-main .item > div{
   display: flex;
   justify-content: center;
-  width: 50vw;
-  margin: 30px auto;
-  height: 30vh;
-  position: relative;
+  align-items: center;
+  margin: 80px auto;
+  flex-wrap: wrap;
+  
 }
-.terciary-article-quaternary-section-main > input {
-  display: flex;
-  justify-content: space-around;
-}
-.terciary-article-quaternary-section-main div {
-  position: absolute;
-  display: none;
-}
-.terciary-article-quaternary-section-main div.block-div {
-  display: block;
-}
-.terciary-article-quaternary-section-main div span {
+.terciary-article-quaternary-section-main .item div span {
   width: 50px;
   height: 50px;
   background-color: rgb(59, 137, 251);
@@ -348,9 +330,9 @@ li a {
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
     0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
 }
-.terciary-article-quaternary-section-main div p {
+.terciary-article-quaternary-section-main .item div p {
   margin-left: 10px;
-  max-width: 200px;
+  max-width: 300px;
 }
 .quinary-section-main {
   display: block;
@@ -493,7 +475,7 @@ li a {
 .primary-article-septenary-section-main {
   margin: 60px auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -502,13 +484,11 @@ li a {
 }
 .secondary-article-septenary-section-main {
   margin: 60px auto;
+  max-width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-.secondary-article-septenary-section-main > div {
-  width: 200px;
 }
 .tertiary-article-septenary-section-main {
   margin: 60px auto;
@@ -595,5 +575,7 @@ li a {
 @media (max-width: 430px) {
   .secondary-article-quaternary-section-main {
     grid-template-columns: repeat(2, 2fr);
+    max-width: 80vw;
+    margin: 0 auto;
   }
 }
