@@ -9,8 +9,7 @@
     <script src="./js/script.js"></script>
     <link rel="icon" href="./assets/favicon-48x48.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <link rel="stylesheet" href="./css/gallery.min.css">
-    <link rel="stylesheet" href="./css/gallery.theme.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
@@ -224,7 +223,7 @@
                 <span class="material-icons-outlined">
                     home
                 </span>
-                <h4>O FUTURO DA SUA EMPRESA COMEÇA HOJE</h4><br><br>
+                <h3>O FUTURO DA SUA EMPRESA COMEÇA HOJE</h3>
             </article>
             <article>
                 <button>SOLICITE UM ORÇAMENTO
@@ -247,15 +246,12 @@
                 </button>
             </article>
             <article class="secondary-article-terciary-section-main">
-                <div class="gallery items-3">
-                    <div id="item-1" class="control-operator"></div>
-                    <div id="item-2" class="control-operator"></div>
-                    <div 0,id="item-3" class="control-operator"></div>
-                  
-                    <figure class="item">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
                         <div>
                             <figure>
-                                <img src="./assets/model-primary-figure-main.jpg" alt="">
+                              <div class="figure-one"></div>
                             </figure>
                             <h3>Dilly Troy</h3>
                             <p>Dentista especializada em harmonização orofacial</p>
@@ -265,12 +261,11 @@
                                 </span>
                             </button>
                         </div>
-                    </figure>
-                  
-                    <figure class="item">
+                      </div>
+                      <div class="carousel-item">
                         <div>
                             <figure>
-                                <img src="./assets/model-primary-figure-main.jpg" alt="">
+                                <div class="figure-two"></div>
                             </figure>
                             <h3>Bom Tempo Solar</h3>
                             <p>Empresa de instalação e manuntenção de energia fotovoltaica</p>
@@ -280,12 +275,11 @@
                                 </span>
                             </button>
                         </div>
-                    </figure>
-                  
-                    <figure class="item">
+                      </div>
+                      <div class="carousel-item">
                         <div>
                             <figure>
-                                <img src="./assets/model-primary-figure-main.jpg" alt="">
+                                <div class="figure-three"></div>
                             </figure>
                             <h3>Placas.Auto</h3>
                             <p>Empresa de emplacamento mercosul com toda a comunicação elaborada por nós.</p>
@@ -295,15 +289,17 @@
                                 </span>
                             </button>
                         </div>
-                    </figure>
-                  
-                    <div class="controls">
-                      <a href="#item-1" class="control-button">•</a>
-                      <a href="#item-2" class="control-button">•</a>
-                      <a href="#item-3" class="control-button">•</a>
+                      </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                   </div>
-
             </article>
         </section>
         <section class="quaternary-section-main">
@@ -351,11 +347,9 @@
                 </span>
             </article>
             <article class="terciary-article-quaternary-section-main">
-                <div  class="gallery autoplay items-3">
-                    <div id="item-1" class="control-operator"></div>
-                    <div id="item-2" class="control-operator"></div>
-                    <div id="item-3" class="control-operator"></div>
-                    <figure class="item">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> 
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
                         <div>
                             <span class="material-icons-outlined">
                                 person_outline
@@ -364,8 +358,8 @@
                                 placeat debitis non eaque ab, praesentium esse earum quis voluptates consequatur numquam quaerat
                                 magni quae! Velit, quasi.</p>
                         </div>
-                    </figure>
-                    <figure class="item">
+                      </div>
+                      <div class="carousel-item">
                         <div>
                             <span class="material-icons-outlined">
                                 person_outline
@@ -374,9 +368,8 @@
                                 vero culpa cupiditate aspernatur sit itaque consequuntur, cum eos nihil voluptates, architecto
                                 ullam repellat aut assumenda corrupti pariatur?</p>
                         </div>
-                    </figure>
-                  
-                    <figure class="item">
+                      </div>
+                      <div class="carousel-item">
                         <div>
                             <span class="material-icons-outlined">
                                 person_outline
@@ -385,15 +378,14 @@
                                 mollitia quo, voluptatem laudantium rem non expedita, veniam beatae. Consequatur exercitationem
                                 necessitatibus dolore consequuntur deleniti, modi consectetur?</p>
                         </div>
-                    </figure>
-                  
-                    <div class="controls">
-                      <a href="#item-1" class="control-button">•</a>
-                      <a href="#item-2" class="control-button">•</a>
-                      <a href="#item-3" class="control-button">•</a>
+                      </div>
                     </div>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
                   </div>
-                </div>
             </article>
         </section>
         <section class="quinary-section-main">
@@ -658,5 +650,6 @@
             </article>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
