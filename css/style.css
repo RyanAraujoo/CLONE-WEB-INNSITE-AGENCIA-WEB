@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300;1,700&display=swap');
-
+#main {
+  display: none;
+}
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +17,7 @@
     rgb(47, 0, 255) 100%
   );
   color: rgb(247, 247, 247);
-  padding-bottom: 25px;
+  padding-bottom: 50px;
 }
 .fixed-header-content {
   display: grid;
@@ -24,7 +26,7 @@
     "f c"
     "f n";
 }
-.figure-fixed-header-content {
+.logo-fixed {
   grid-area: f;
 }
 .contact-fixed-header-content {
@@ -40,32 +42,64 @@ li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-.navigation-navbar-content ul {
+.logo-fixed {
   display: flex;
-  font-size: 20px;
-  font-weight: 500;
-  margin-top: 35px;
-  flex-wrap: wrap;
-}
-.navigation-navbar-content ul li {
-  padding: 10px;
-  z-index: 1;
-}
-.navigation-navbar-content ul li,
-.navbar-content ul li {
-  margin-left: 30px;
-  margin-right: 15px;
-}
-.navigation-responsive-navbar-content {
-  margin-top: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin: 25px;
   z-index: 2;
-  font-size: 50px;
-  cursor: pointer;
+}
+.logo-fixed > div > figure img {
+    width: 80px;
+    height: 80px;
+}
+.logo-fixed h1 {
+  font-weight:bolder;
   position: absolute;
   top: 0;
-  right: 0;
+  margin-top: 15px;
+  font-size: 27px;
+}
+.logo-fixed p {
+    font-size: 15px;
+    margin-top: 25px;
+    width: 250px;
+}
+.contact-fixed-header-content i {
+  margin-right: 10px;
+}
+.contact-scroll-btn figure img {
+  width: 75px;
+  height:75px;
+  background-color: #46ca22;
+  border-radius: 50px;
+  margin-left: 20px;
+  padding-right: 5px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 25px;
+}
+.contact-scroll-btn {
+  position: fixed;
+  cursor: pointer;
+}
+.navigation-navbar-content ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.navigation-navbar-content ul li, .navbar-content ul li {
+  margin-left: 30px;
+  padding: 10px;
+}
+.navigation-responsive-navbar-content i {
+  z-index: 1;
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 8;
   display: none;
-  margin-right: 50px;
 }
 .special-navigation-navbar-content {
   border: 1px solid rgb(247, 247, 247);
@@ -83,22 +117,16 @@ li a {
   position: absolute;
   right: 0;
 }
-.navbar-content ul li a {
-  display: flex;
-  align-items: center;
-  padding: 2px;
-}
 /* part 2 - header */
 .header-main-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 .header-main-informational-content {
   max-width: 400px;
   margin-left: 60px;
-  margin-top: 50px;
 }
 .header-main-informational-content h1 {
   font-size: 60px;
@@ -106,22 +134,23 @@ li a {
 }
 .header-main-informational-content button {
   background: none;
-  margin-top: 25px;
   border: 1px solid rgb(247, 247, 247);
   color: rgb(247, 247, 247);
   padding: 10px;
-  display: flex;
-  align-items: center;
   cursor: pointer;
-  text-align: center;
+}
+.header-main-informational-content i {
+  margin-left: 10px;
 }
 .header-main-icone-mouse {
   position: relative;
 }
-.header-main-icone-mouse span {
+.header-main-icone-mouse i {
   position: absolute;
   bottom: 0;
   font-size: 50px;
+  margin-left: 60px;
+  margin-bottom: 25px;
 }
 .header-main-img-phone figure img {
   width: 400px;
@@ -130,9 +159,16 @@ li a {
   list-style-type: none;
   position: absolute;
   bottom: 0;
-  margin-bottom: 50px;
   right: 0;
-  margin-right: 15px;
+  margin-right: 25px;
+  margin-bottom: 50px;
+}
+.header-main-contact ul li a > i {
+  font-size: 25px;
+  margin-top: 10px;
+}
+.header-main-contact ul li a > i:first-child {
+  margin-left: -5px;
 }
 .header-main-contact ul li span {
   color: rgb(247, 247, 247);
@@ -526,18 +562,23 @@ margin-bottom: 10px;
   margin-left: 25px;
 }
 /* responsive */
-@media (max-width: 894px) {
-  .header-main-icone-mouse {
-    display: none;
-  }
+@media (max-width: 1000px) {
   .contact-fixed-header-content > div ul {
     display: none;
   }
   .navigation-fixed-header-content {
     display: none;
   }
-  .navigation-responsive-navbar-content {
+  .navigation-responsive-navbar-content i {
     display: block;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    margin-top: 50px;
+    margin-right: 50px;
+  }
+  .header-main-icone-mouse {
+    display: none;
   }
   .header-main-img-phone {
     display: none;
@@ -554,19 +595,23 @@ margin-bottom: 10px;
   .navigation-navbar-content ul {
     display: block;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: 1;
     right: 0;
-    background: rgb(32, 7, 255);
-    padding-top: 100px;
+    background: rgb(59, 137, 251);
+    background: radial-gradient(
+      circle,
+      rgba(59, 137, 251, 1) 60%,
+      rgb(47, 0, 255) 100%
+    );
     animation: NavbarSensibility 0.5s linear;
-    margin: 0;
+    margin-top: 50px;
   }
   .navigation-navbar-content ul li {
     text-align: right;
     margin-right: 50px;
-    margin-top: 25px;
+    margin-top: 30px;
   }
 }
 
