@@ -35,7 +35,7 @@ header {
 li {
   list-style-type: none;
 }
-li a {
+li a , a{
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
@@ -193,8 +193,6 @@ i {
 }
 .secondary-article.primary-section-main > div {
   margin: 10px auto;
-  max-width: 400px;
-  min-width: 200px;
   padding: 5px;
 }
 .secondary-article.primary-section-main > div figure div{
@@ -210,15 +208,15 @@ i {
 .secondary-section-main {
   display: flex;
   justify-content: space-around;
-  background: rgb(59, 137, 251);
   background: radial-gradient(
     circle,
     rgba(59, 137, 251, 1) 61%,
     rgb(47, 0, 255) 100%
   );
   color: rgb(247, 247, 247);
-  padding: 30px;
+  padding: 15px;
   flex-wrap: wrap;
+  align-items: center;
 }
 .secondary-section-main > article:first-child {
   display: flex;
@@ -233,9 +231,10 @@ i {
   margin: 0 auto;
   display: block;
   margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 20px;
+  margin-right: 5px;
 }
-.secondary-section-main button {
+.secondary-section-main > button {
   background: none;
   border: 1px solid rgb(247, 247, 247);
   color: rgb(247, 247, 247);
@@ -247,54 +246,52 @@ i {
 }
 .terciary-section-main {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  max-width: 80vw;
   align-items: center;
-  margin: 100px auto;
+  margin: 50px auto;
   flex-wrap: wrap;
 }
-.primary-article-terciary-section-main {
+.primary-article.terciary-section-main {
   max-width: 300px;
-  margin-left: 10vw;
+ display: block;
   margin-bottom: 50px;
 }
-.primary-article-terciary-section-main h1 {
+.primary-article.terciary-section-main h1 {
   font-size: 60px;
   color: rgb(59, 137, 251);
-  margin: 15px auto;
+  font-weight: bolder;
 }
-.primary-article-terciary-section-main p {
+.primary-article.terciary-section-main p {
   margin-bottom: 10px;
 }
-.primary-article-terciary-section-main button {
+.primary-article.terciary-section-main button {
   background: none;
   border: 1px solid;
   padding: 10px;
   display: flex;
   align-items: center;
 }
-.secondary-article-terciary-section-main {
+.secondary-article.terciary-section-main{
   max-width: 50vw;
 }
-.secondary-article-terciary-section-main figure div {
-  width: 300px;
+.secondary-article.terciary-section-main figure div {
+  max-width: 400px;
   height: 300px;
 }
-.secondary-article-terciary-section-main  h3 {
+.secondary-article.terciary-section-main h3 {
   font-size: 25px;
 }
-.secondary-article-terciary-section-main  p {
-  margin: 10px auto;
+.secondary-article.terciary-section-main p {
+  max-width: 250px;
 }
-.secondary-article-terciary-section-main button {
+.btn {
   border: none;
   background: none;
-  display: flex;
-  align-items: center;
   margin-bottom: 25px;
   cursor: pointer;
-}
-#carouselExampleControls {
-  width: 300px;
+  z-index: 3;
+  margin-left: 50px;
 }
 .figure-one {
     background-color: red;
@@ -309,25 +306,25 @@ i {
   background-color: rgb(211, 207, 207);
   padding: 10px;
 }
-.primary-article-quaternary-section-main h1 {
+.primary-article.quaternary-section-main h1 {
   font-size: 50px;
   color: rgb(59, 137, 251);
   text-align: center;
   margin: 25px auto;
+  font-weight: bolder;
 }
-.primary-article-quaternary-section-main p {
+.primary-article.quaternary-section-main  p {
   margin-top: 15px;
   margin-bottom: 15px;
   text-align: center;
 }
-.secondary-article-quaternary-section-main {
+.secondary-article.quaternary-section-main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
   max-width: 80%;
   margin: 0 auto;
 }
-.secondary-article-quaternary-section-main span {
+.secondary-article.quaternary-section-main > i {
   width: 200px;
   height: 200px;
   margin: 50px auto;
@@ -342,70 +339,75 @@ i {
     0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
 }
 
-.terciary-article-quaternary-section-main {
+.terciary-article.quaternary-section-main {
   max-width: 300px;
   background-color: rgb(211, 207, 207);
   margin: 0 auto;
   margin-bottom: 50px;
 }
-.terciary-article-quaternary-section-main > div{
+.terciary-article.quaternary-section-main > div{
   margin: 80px auto;
   height: 300px;
 }
-.terciary-article-quaternary-section-main div span {
+.terciary-article.quaternary-section-main div i {
   width: 50px;
+  min-width: 25px;
   height: 50px;
   background-color: rgb(59, 137, 251);
   font-weight: bolder;
   padding: 15px;
+  text-align: center;
   color: white;
   margin-bottom: 15px;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
     0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
 }
-.terciary-article-quaternary-section-main div p {
+.terciary-article.quaternary-section-main div p {
   margin-left: 10px;
   max-width: 300px;
   margin-bottom: 50px;
 }
-.quinary-section-main {
+section:nth-child(5) {
   display: block;
   background-color: rgba(221, 219, 219, 0.226);
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.primary-article-quinary-section-main h1 {
+.primary-article.quinary-section-main h1 {
   font-size: 50px;
   color: rgb(59, 137, 251);
   text-align: center;
+  font-weight: bolder;
 }
-.primary-article-quinary-section-main p {
+.primary-article.quinary-section-main p {
   text-align: center;
   margin: 15px auto;
 }
-.secondary-article-quinary-section-main {
+.secondary-article.quinary-section-main {
   display: flex;
   justify-content: space-evenly;
   margin: 20px auto;
   align-items: center;
   flex-wrap: wrap;
 }
-.secondary-article-quinary-section-main > div {
+.secondary-article.quinary-section-main > div {
   margin: 25px 0;
 }
-.secondary-article-quinary-section-main figure img {
+.secondary-article.quinary-section-main figure div {
   width: 350px;
   height: 250px;
+  background-color: rgb(59, 137, 251) ;
 }
-.secondary-article-quinary-section-main h1 {
+.secondary-article.quinary-section-main h1 {
   font-size: 25px;
   max-width: 300px;
+  font-weight: bolder;
 }
-.secondary-article-quinary-section-main p {
+.secondary-article.quinary-section-main p {
   color: rgba(0, 0, 0, 0.37);
   margin: 10px auto;
 }
-.secondary-article-quinary-section-main button {
+.secondary-article.quinary-section-main button {
   background: none;
   border: none;
   display: flex;
@@ -421,38 +423,47 @@ i {
   margin: 10px auto;
   max-width: 50vw;
 }
-.senary-section-main {
+section:nth-child(6) {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  margin: 100px auto;
+  margin: 50px auto;
   flex-wrap: wrap;
-  width: 80vw;
 }
-.primary-article-senary-section-main h1 {
+.primary-article.senary-section-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+.primary-article.senary-section-main h1 {
   font-size: 50px;
   color: rgb(59, 137, 251);
+  font-weight: bolder;
 }
-.primary-article-senary-section-main p {
+.primary-article.senary-section-main p {
   color: rgb(90, 86, 86);
   font-size: 25px;
 }
-.primary-article-senary-section-main > div > div{
+.primary-article.senary-section-main > div > div{
   margin: 50px auto;
 }
-.primary-article-senary-section-main > div > ul {
+.primary-article.senary-section-main > div > .social-networks-Innsite  {
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
-.primary-article-senary-section-main > div > ul li a {
+.primary-article.senary-section-main > div > .social-networks-Innsite li a {
   color: rgba(0, 0, 0, 0.315);
 }
-.secondary-article-senary-section-main {
+.primary-article.senary-section-main > div > .social-networks-Innsite li {
+  font-size: 25px;
+  padding: 5px;
+}
+.secondary-article.senary-section-main{
   width: 40vw;
   margin-top: 50px;
 }
-.secondary-article-senary-section-main > form > input {
+.secondary-article.senary-section-main > form > input {
   display: block;
   width: 100%;
   height: 40px;
@@ -460,7 +471,7 @@ i {
   padding-left: 15px;
   border: 1px solid rgba(0, 0, 0, 0.288);
 }
-.secondary-article-senary-section-main textarea {
+.secondary-article.senary-section-main textarea {
   display: block;
   width: 100%;
   height: 100px;
@@ -468,15 +479,15 @@ i {
   padding-top: 10px;
   border: 1px solid rgba(0, 0, 0, 0.288);
 }
-.secondary-article-senary-section-main div {
+.secondary-article.senary-section-main div {
   display:flex;
   align-items: center;
   margin-top: 10px;
 }
-.secondary-article-senary-section-main div > p {
+.secondary-article.senary-section-main div > p {
   margin-left: 10px;
 }
-.secondary-article-senary-section-main button {
+.secondary-article.senary-section-main button {
   background-color: rgb(59, 137, 251);
   display: flex;
   align-items: center;
@@ -486,11 +497,11 @@ i {
   cursor: pointer;
   margin-top: 15px;
 }
-.primary-article-senary-section-main > div div:nth-child(2) p,.primary-article-senary-section-main > div div:nth-child(3) p {
+.primary-article.senary-section-main  > div div:nth-child(2) p,.primary-article.senary-section-main > div div:nth-child(3) p {
     color: rgb(59, 137, 251);
     font-weight: 800;
 }
-.septenary-section-main {
+section:nth-child(7){
   background: rgb(59, 137, 251);
   background: radial-gradient(
     circle,
@@ -500,59 +511,63 @@ i {
   color: rgb(247, 247, 247);
   padding-top: 50px;
   padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.septenary-section-main  a {
-  display: block;
-  color: rgb(247, 247, 247);
-  text-decoration: none;
-}
-.primary-article-septenary-section-main {
-  margin: 60px auto;
+.primary-article.septenary-section-main {
+  margin: 25px auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-.primary-article-septenary-section-main > div {
+.primary-article.septenary-section-main a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
+.primary-article.septenary-section-main > div {
   width: 400px;
 }
-.secondary-article-septenary-section-main {
-  margin: 60px auto;
+.secondary-article.septenary-section-main {
+  margin: 25px auto;
   width: 90vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-.secondary-article-septenary-section-main > div {
+.secondary-article.septenary-section-main > div {
   width: 250px;
 }
-.tertiary-article-septenary-section-main {
-  margin: 60px auto;
+.tertiary-article.septenary-section-main {
+  margin: 25px auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap-reverse;
 }
-.tertiary-article-septenary-section-main > div {
+.tertiary-article.septenary-section-main > div {
   width: 400px;
   text-align: center;
 }
+
+.septenary-section-main > article > div {
+  margin: 10px auto;
+}
 .social-networks-Innsite > ul {
   display: flex;
-}
-.septenary-section-main > article > div {
-  margin: 50px auto;
-}
-.social-networks-Innsite > ul {
-  text-align: center;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  max-width: 50vw;
 }
-.social-networks-Innsite > ul li span {
-  font-size: 30px;
-  margin-left: 25px;
+.social-networks-Innsite > ul > li {
+  padding: 5px;
+  font-size: 30px
 }
+
 @media (max-width: 1203px) {
   .icone.header-main-content i {
     display: none;
@@ -598,54 +613,20 @@ i {
   .img.header-main-content {
     display: none;
   }
+  .secondary-article.quaternary-section-main {
+    grid-template-columns: repeat(2,2fr);
+  }
 }
 @media (max-width: 950px) {
   .contact.header-main-content ul {
       display: none;
   }
-}
-
-@keyframes NavbarSensibility {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-/* 
-@media (max-width: 894px) {
-  .navigation-navbar-content ul {
+  .secondary-article.primary-section-main {
     display: block;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
-    right: 0;
-    background: rgb(59, 137, 251);
-    background: radial-gradient(
-      circle,
-      rgba(59, 137, 251, 1) 60%,
-      rgb(47, 0, 255) 100%
-    );
-    animation: NavbarSensibility 0.5s linear;
-    margin-top: 50px;
-  }
-  .navigation-navbar-content ul li {
-    text-align: right;
-    margin-right: 50px;
-    margin-top: 30px;
+    width: 100%;
   }
 }
 
-
-
-@media (max-width: 750px) {
-  .secondary-article-quaternary-section-main {
-    grid-template-columns: repeat(2,2fr);
-  }
-}
 @keyframes NavbarSensibility {
   from {
     opacity: 0;
@@ -653,12 +634,5 @@ i {
 
   to {
     opacity: 1;
-  }
-}
-@media (max-width: 430px) {
-  .secondary-article-quaternary-section-main {
-    grid-template-columns: repeat(2, 2fr);
-    max-width: 80vw;
-    margin: 0 auto;
   }
 }
