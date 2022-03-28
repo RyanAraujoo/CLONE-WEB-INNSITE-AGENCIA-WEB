@@ -110,14 +110,14 @@ i {
 
 .informational.header-main-content {
   max-width: 500px;
-  min-width: 350px;
-  margin-left: 55px;
+  min-width: 300px;
+  margin-left: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .informational.header-main-content h1 {
-  font-size:60px;
+  font-size:50px;
   margin: 5px auto;
 }
 .informational.header-main-content button {
@@ -327,7 +327,8 @@ i {
   align-items: center;
 }
 .secondary-article.quaternary-section-main > i {
-  width: 200px;
+  max-width: 500px;
+  min-width: 170px;
   height: 200px;
   margin: 50px auto;
   background-color: rgb(59, 137, 251);
@@ -524,7 +525,7 @@ section:nth-child(7){
 }
 .primary-article.septenary-section-main > div {
   max-width: 500px;
-  min-width: 400px;
+  min-width: 200px;
 }
 .secondary-article.septenary-section-main {
   margin: 25px auto;
@@ -534,7 +535,7 @@ section:nth-child(7){
 }
 .secondary-article.septenary-section-main > div {
   max-width: 500px;
-  min-width: 200px;
+  min-width: 150px;
 }
 .tertiary-article.septenary-section-main {
   margin: 25px auto;
@@ -554,10 +555,11 @@ section:nth-child(7){
 }
 .social-networks-Innsite > ul > li {
   padding: 5px;
-  font-size: 20px
-
+  font-size: 20px;
 }
-
+.septenary-section-main a {
+  padding: 2px;
+}
 @media (max-width: 1203px) {
   .icone.header-main-content i {
     display: none;
@@ -568,7 +570,7 @@ section:nth-child(7){
     display: none;
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     z-index: 1;
     right: 0;
     top: 0;
