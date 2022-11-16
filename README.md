@@ -1,27 +1,37 @@
-"# CLONE-WEB-INNSITE-AGENCIA-WEB" 
-
-<h1>PÁGINA WEB CLONE</h1>
+<h1  align="center">CLONE-WEB-INNSITE-AGENCIA-WEB<img width=40 align="center" src="./assets/logo.png"></h1>
 <h2>INNSITE - AGÊNCIA WEB DE MARKETING</h2>
 <p>https://innsite.com.br/</p>
+# 📌 Tópicos
 
-<h2>HABILIDADES UTILIZADAS</h2>
+<!--ts-->
 
-<p>HTML</p>
-<P>CSS</p>
-<p>JAVASCRIPT PURO</p>
+- [Descricao](#-Descricao)
+- [Tecnologias](#-Tecnologias)
+- [Tarefas](#-Features)
+- [Aplicacao](#-Como-Posso-Rodar-a-Aplicacao?)
+<!--te-->
 
-<h2>OBJETIVOS</h2>
+# 📄 Descricao
 
-<p>UTILIZAÇÃO DA SEO - Search Engine Optimization</p>
-<p>PRÁTICA DOS ESTUDOS REALIZADOS</p>
---- display flexbox/grid   
---- carrossel css
---- material icon 
---- position css
+> O projeto fornece a vizualização de uma página com muitas informações sendo organizadas com responsividade ao diminuir o tamanho da tela
 
-<h2>TAREFAS</h2>
-<p>CRIAR HEADER NAV/HEADER DO SITE</p>
-<p>TORNAR O HEADER NAV RESPONSIVO E FLEXÍVEL POR TODA PAGINA</p>
+# 🚀 Tecnologias
 
-<h2>REGRAS</h2>
-<p>-</p>
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [SCSS](https://sass-lang.com/)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Visual Studio Code](https://code.visualstudio.com/)
+
+# 🎯 Features
+
+<pre>
+✔️ Design Responsivo
+✔️ display flexbox/grid  
+✔️ carrossel, material icon e position css
+✔️ Criar header nav/navbar da pagina responsivo
+✔️ position css
+</pre>
+# 📑 Como Posso Rodar a Aplicacao?
+[Acesse agora](https://ryanaraujoo.github.io/CLONE-WEB-INNSITE-AGENCIA-WEB/)
+
+-----------------------------------------------------------------------------
